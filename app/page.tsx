@@ -279,9 +279,10 @@ export default function Home() {
 
           <div className="relative">
             <div className="relative aspect-square overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 to-purple-500/10 shadow-2xl transform hover:scale-105 transition-all duration-500 border border-primary/20">
-              <img src="/placeholder.svg?height=600&width=600" alt="Profile" className="object-cover w-full h-full" />
+              <img src="/stuti-profile.png" alt="Stuti Gupta" className="object-cover w-full h-full" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
+          </div>
+
             <div className="absolute top-8 -right-8 w-full h-full border-4 border-primary/30 rounded-3xl -z-10 animate-pulse"></div>
             <div className="absolute -bottom-8 -left-8 w-full h-full border-4 border-purple-500/30 rounded-3xl -z-10 animate-pulse"></div>
             <div className="absolute top-4 right-4 w-24 h-24 bg-gradient-to-r from-primary to-purple-500 rounded-full blur-2xl opacity-50 animate-float"></div>
