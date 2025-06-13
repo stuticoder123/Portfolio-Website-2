@@ -157,7 +157,7 @@ export default function Home() {
                   asChild
               >
             <a
-            href="/Stuti_Gupta_Resume.pdf"
+            href="/StutiGupta_Resume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
