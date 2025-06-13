@@ -151,19 +151,22 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-6 justify-center pt-8">
-            <MagneticButton>
+           <MagneticButton>
               <Button
-                size="lg"
-                className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-lg px-8 py-6 rounded-xl"
-                asChild
+                className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  asChild
               >
-                <Link href="#projects">
-                  <Sparkles className="mr-2 h-5 w-5" />
-                  View Projects
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </MagneticButton>
+            <a
+            href="/Stuti_Gupta_Resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+          <Download className="mr-2 h-4 w-4" /> Resume
+      </a>
+  </Button>
+</MagneticButton>
+
 
             <MagneticButton>
               <Button
