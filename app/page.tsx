@@ -178,10 +178,10 @@ export default function Home() {
 
           <div className="flex justify-center gap-6 pt-8">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
+              { icon: Github, href: "https://github.com/stuticoder123", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/stuticoder1/", label: "LinkedIn" },
-              { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-              { icon: Mail, href: "mailto:stutigupta@example.com", label: "Email" },
+              { icon: Twitter, href: "https://x.com/stuticoder123", label: "Twitter" },
+              { icon: Mail, href: "mailto:stuticoder123@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <MagneticButton key={label}>
                 <Link
