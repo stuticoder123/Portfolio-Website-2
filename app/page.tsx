@@ -71,17 +71,18 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <MagneticButton>
-                <Button
-                    className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"asChild>
-    <a
-      href="/Stuti_Gupta_Resume.pdf"
-      download="Stuti_Gupta_Resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Download className="mr-2 h-4 w-4" /> Resume
-    </a>
+            <div className="flex flex-wrap gap-6 justify-center pt-8">
+           <MagneticButton>
+              <Button
+                className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  asChild >
+            <a
+            href="/StutiGupta_Resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer" >
+          <Download className="mr-2 h-4 w-4" /> Resume
+      </a>
   </Button>
 </MagneticButton>
 
@@ -150,23 +151,30 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center pt-8">
-           <MagneticButton>
-              <Button
-                className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-                  asChild
-              >
-            <a
-            href="/StutiGupta_Resume.pdf"
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-          <Download className="mr-2 h-4 w-4" /> Resume
+          {/* Projects Button */}
+  <MagneticButton>
+    <Button
+      className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-400 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+      asChild
+    >
+      <a
+        href="#projects" // replace with actual section or route if needed
+        rel="noopener noreferrer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="mr-2 h-4 w-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2" >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 7V5a2 2 0 012-2h2m10 0h2a2 2 0 012 2v2M3 7h18M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l6 5m0 0l6-5m-6 5v8" />
+        </svg>
+        Projects
       </a>
-  </Button>
-</MagneticButton>
+    </Button>
+  </MagneticButton>
 
+</div>
 
             <MagneticButton>
               <Button
