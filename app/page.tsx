@@ -123,8 +123,8 @@ export default function Home() {
           </div>
 
           <AnimatedText
-            text="Crafting Digital Experiences That Inspire & Engage"
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-foreground via-primary via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight"
+          text="Crafting Digital Experiences That Inspire & Engage"
+          className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight bg-gradient-to-r from-foreground via-primary via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight"
           />
 
           <div className="relative">
