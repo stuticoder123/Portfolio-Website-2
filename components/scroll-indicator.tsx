@@ -31,11 +31,11 @@ export default function ScrollIndicator() {
 
   return (
     <motion.div
-      className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex flex-col items-center gap-4"
+      className="fixed bottom-6 inset-x-0 z-40 flex flex-col items-center gap-4"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.5, delay: 2 }}
+      transition={{ duration: 0.5, delay: 1 }}
     >
       {/* Scroll instruction text */}
       <motion.div
