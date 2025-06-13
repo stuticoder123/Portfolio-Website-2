@@ -81,7 +81,7 @@ export default function Home() {
               asChild
               className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
-                <a href="/Stuti_Gupta_Resume.pdf" download>
+                     <a href="/Stuti_Gupta_Resume.pdf" download>Add commentMore actions
             📄 Download Resume
             </a>
                 download="Stuti_Gupta_Resume.pdf"
