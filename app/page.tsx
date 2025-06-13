@@ -254,10 +254,10 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
               <div className="flex gap-4">
                 {[
-                  { icon: Github, href: "https://github.com", color: "hover:text-gray-600" },
+                  { icon: Github, href: "https://github.com/stuticoder123", color: "hover:text-gray-600" },
                   { icon: Linkedin, href: "https://www.linkedin.com/in/stuticoder1/", color: "hover:text-blue-600" },
-                  { icon: Twitter, href: "https://twitter.com", color: "hover:text-blue-400" },
-                  { icon: Mail, href: "mailto:stutigupta@example.com", color: "hover:text-red-500" },
+                  { icon: Twitter, href: "https://x.com/stuticoder123", color: "hover:text-blue-400" },
+                  { icon: Mail, href: "mailto:stuticoder123@gmail.com", color: "hover:text-red-500" },
                 ].map(({ icon: Icon, href, color }) => (
                   <MagneticButton key={href}>
                     <Button
