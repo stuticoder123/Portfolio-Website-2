@@ -208,10 +208,10 @@ export default function Home() {
       {/* Stats Section */}
       <AnimatedSection className="container py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          <StatCard icon={<Code />} value={50} label="Projects Completed" />
-          <StatCard icon={<Users />} value={25} label="Happy Clients" />
-          <StatCard icon={<Calendar />} value={5} label="Years Experience" />
-          <StatCard icon={<Star />} value={100} label="GitHub Stars" />
+          <StatCard icon={<Code />} value={14} label="Projects Completed" />
+          <StatCard icon={<Users />} value={9120} label="Community Members" />
+          <StatCard icon={<Calendar />} value={500} label="Coding Questions solved" />
+          <StatCard icon={<Star />} value={420} label="GitHub Views" />
         </div>
       </AnimatedSection>
 
