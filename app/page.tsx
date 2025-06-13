@@ -69,7 +69,7 @@ export default function Home() {
               </Link>
             ))}
           </nav>
-         <header>
+           <header>Add commentMore actions
       <div className="flex items-center gap-4">
         {/* Theme Toggle */}
         <ThemeToggle />
@@ -82,7 +82,7 @@ export default function Home() {
               className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <a
-                href="/Stuti_Gupta_Resume.pdf"
+                href="/Stuti_Gupta_Resume.pdf"Add commentMore actions
                 download="Stuti_Gupta_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -92,7 +92,6 @@ export default function Home() {
               </a>
             </Button>
           </MagneticButton>
-        </div>
       </div>
     </header>
 
