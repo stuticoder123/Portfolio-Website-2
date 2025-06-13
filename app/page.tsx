@@ -229,9 +229,10 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hello! I'm a passionate full-stack developer with a focus on creating intuitive and performant web
-                applications. With several years of experience in the industry, I've worked on a variety of projects
-                ranging from small business websites to complex enterprise applications.
+                Hey, I’m a full-stack developer and tech enthusiast passionate about building impactful, user-first web 
+                applications.From intuitive UIs to optimized backends, I create solutions that fuse clean design with 
+                strong functionality. Whether it's coding scalable systems or leading creative digital outreach, I love 
+                turning ideas into experiences that work — beautifully and efficiently.
               </p>
             </div>
 
