@@ -1,6 +1,6 @@
 # 💻 Stuti Gupta's Portfolio Website - 2
 Welcome to my personal portfolio website — a space where I showcase my skills, projects, and passion for crafting digital experiences that inspire and engage.
-🌐 **Live Site**: [v0-portfolio-website-makeover-seven.vercel.app](https://v0-portfolio-website-makeover-seven.vercel.app/)
+🌐 **Live Site** : [You can check it here](https://v0-portfolio-website-makeover-seven.vercel.app/)
 
 ---
 
