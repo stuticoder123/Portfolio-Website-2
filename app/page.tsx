@@ -69,7 +69,7 @@ export default function Home() {
               </Link>
             ))}
           </nav>
-                  <div className="flex items-center gap-4">
+                          <div className="flex items-center gap-4">
             <ThemeToggle />
             <MagneticButton>
               <Button className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
