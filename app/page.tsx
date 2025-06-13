@@ -280,8 +280,7 @@ export default function Home() {
           <div className="relative">
             <div className="relative aspect-square overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 to-purple-500/10 shadow-2xl transform hover:scale-105 transition-all duration-500 border border-primary/20">
               import profileImage from './stuti-profile.jpg';
-// Image usage
-<Image src={profileImage} alt="Stuti Gupta" width={600} height={600} className="object-cover w-full h-full rounded-3xl" />
+              <img src={profileImage.src} alt="Stuti Gupta" className="object-cover w-full h-full rounded-3xl" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
           </div>
               
