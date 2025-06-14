@@ -72,9 +72,16 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <MagneticButton>
-              <a href="/StutiGupta_Resume.pdf" download="StutiGupta_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary via-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 hover:scale-105 transition-all duration-300">
-              <Download className="mr-2 h-4 w-4" /> Resume </a>
-            </MagneticButton>
+  <a
+    href="/StutiGupta_Resume.pdf"
+    download="StutiGupta_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary via-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 hover:scale-105 transition-all duration-300"
+  >
+    <Download className="mr-2 h-4 w-4" /> Resume
+  </a>
+</MagneticButton>
           </div>
         </div>
       </header>
