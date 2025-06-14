@@ -72,14 +72,8 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <MagneticButton>
-              <Button
-                className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-                asChild
-              >
-                <a href="/StutiGupta_Resume.pdf" download="StutiGupta_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-primary text-white rounded-lg shadow-md hover:shadow-lg transition"> Resume </a>
-                  <Download className="mr-2 h-4 w-4" /> Resume
-                </Link>
-              </Button>
+              <a href="/StutiGupta_Resume.pdf" download="StutiGupta_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary via-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 hover:scale-105 transition-all duration-300">
+              <Download className="mr-2 h-4 w-4" /> Resume </a>
             </MagneticButton>
           </div>
         </div>
