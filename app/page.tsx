@@ -76,7 +76,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 asChild
               >
-                <Link href="/resume/StutiGupta_Resume.pdf" download="StutiGupta_Resume.pdf" target="_blank">
+                <Link href="/StutiGupta_Resume.pdf" download="StutiGupta_Resume.pdf" target="_blank">
                   <Download className="mr-2 h-4 w-4" /> Resume
                 </Link>
               </Button>
