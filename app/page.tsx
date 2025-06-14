@@ -306,17 +306,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "E-commerce Platform",
+                title: "Vizify",
                 description:
-                  "A full-featured online store with product management, cart functionality, and secure checkout.",
-                tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+                  "Your AI-powered academic companion that turns dense research papers into stunning presentations, immersive podcasts, eye-catching visual content, and crisp summaries — effortlessly.",
+                tags: ["Next.js", "React", "Tailwind CSS", "API"],
                 featured: true,
               },
               {
-                title: "Task Management App",
+                title: "Alum Connect",
                 description:
-                  "A collaborative task management tool with real-time updates and team collaboration features.",
-                tags: ["React", "Firebase", "Redux", "Material UI"],
+                  "It is a dynamic web platform designed to bridge the gap between alumni and students of educational institutions. It fosters a verified, secure, and engaging ecosystem where users can connect, mentor, collaborate, and explore opportunities.",
+                tags: ["MERN Stack", "Firebase", "Tailwind CSS", "JWT"],
               },
               {
                 title: "Portfolio Website",
