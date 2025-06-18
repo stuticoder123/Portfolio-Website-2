@@ -12,28 +12,30 @@ import {
   Sparkles,
   Zap,
   Heart,
-} from "lucide-react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import ProjectCard from "@/components/project-card"
-import SkillBadge from "@/components/skill-badge"
-import ContactForm from "@/components/contact-form"
-import AnimatedText from "@/components/animated-text"
-import { ThemeToggle } from "@/components/theme-toggle"
-import AnimatedSection from "@/components/animated-section"
-import TestimonialCard from "@/components/testimonial-card"
-import TimelineItem from "@/components/timeline-item"
-import BlogCard from "@/components/blog-card"
-import StatCard from "@/components/stat-card"
-import ParticlesBackground from "@/components/particles-background"
-import FloatingElements from "@/components/floating-elements"
-import GradientBlob from "@/components/gradient-blob"
-import MagneticButton from "@/components/magnetic-button"
-import ScrollProgress from "@/components/scroll-progress"
-import CosmicBackground from "@/components/cosmic-background"
-import EnhancedCosmicAura from "@/components/enhanced-cosmic-aura"
-import EnhancedCursor from "@/components/enhanced-cursor"
-import ScrollIndicator from "@/components/scroll-indicator"
+} from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import ProjectCard from "@/components/project-card";
+import SkillBadge from "@/components/skill-badge";
+import ContactForm from "@/components/contact-form";
+import AnimatedText from "@/components/animated-text";
+import { ThemeToggle } from "@/components/theme-toggle";
+import AnimatedSection from "@/components/animated-section";
+import TestimonialCard from "@/components/testimonial-card";
+import TimelineItem from "@/components/timeline-item";
+import BlogCard from "@/components/blog-card";
+import StatCard from "@/components/stat-card";
+import ParticlesBackground from "@/components/particles-background";
+import FloatingElements from "@/components/floating-elements";
+import GradientBlob from "@/components/gradient-blob";
+import MagneticButton from "@/components/magnetic-button";
+import ScrollProgress from "@/components/scroll-progress";
+import CosmicBackground from "@/components/cosmic-background";
+import EnhancedCosmicAura from "@/components/enhanced-cosmic-aura";
+import EnhancedCursor from "@/components/enhanced-cursor";
+import ScrollIndicator from "@/components/scroll-indicator";
+import Image from 'next/image';
+import profileImage from '../public/stuti-profile.jpg';
 
 export default function Home() {
   return (
@@ -47,7 +49,10 @@ export default function Home() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 shadow-lg">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
+          <Link
+            href="/"
+            className="flex items-center gap-2 font-bold text-xl group"
+          >
             <div className="relative h-10 w-10 bg-gradient-to-br from-primary via-purple-500 to-pink-500 flex items-center justify-center text-primary-foreground rounded-xl transition-all duration-500 group-hover:rounded-2xl group-hover:scale-110 shadow-lg group-hover:shadow-xl">
               <span className="font-bold text-sm">SG</span>
               <div className="absolute inset-0 bg-gradient-to-br from-primary via-purple-500 to-pink-500 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
@@ -57,7 +62,15 @@ export default function Home() {
             </span>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
-            {["About", "Projects", "Skills", "Experience", "Blog", "Testimonials", "Contact"].map((item) => (
+            {[
+              "About",
+              "Projects",
+              "Skills",
+              "Experience",
+              "Blog",
+              "Testimonials",
+              "Contact",
+            ].map((item) => (
               <Link
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -72,16 +85,16 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <MagneticButton>
-  <a
-    href="/StutiGupta_Resume.pdf"
-    download="StutiGupta_Resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary via-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 hover:scale-105 transition-all duration-300"
-  >
-    <Download className="mr-2 h-4 w-4" /> Resume
-  </a>
-</MagneticButton>
+              <a
+                href="/StutiGupta_Resume.pdf"
+                download="StutiGupta_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary via-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:shadow-xl hover:opacity-90 hover:scale-105 transition-all duration-300"
+              >
+                <Download className="mr-2 h-4 w-4" /> Resume
+              </a>
+            </MagneticButton>
           </div>
         </div>
       </header>
@@ -124,8 +137,8 @@ export default function Home() {
           </div>
 
           <AnimatedText
-              text="Crafting   Digital   Experiences   That   Inspire   &   Engage"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground via-primary via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight"
+            text="Crafting   Digital   Experiences   That   Inspire   &   Engage"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight"
           />
 
           <div className="relative">
@@ -142,8 +155,8 @@ export default function Home() {
               <span className="bg-gradient-to-r from-pink-500 to-primary bg-clip-text text-transparent font-semibold">
                 performant
               </span>{" "}
-              web applications using modern technologies that solve real-world problems and deliver exceptional user
-              experiences.
+              web applications using modern technologies that solve real-world
+              problems and deliver exceptional user experiences.
             </p>
           </div>
 
@@ -179,10 +192,26 @@ export default function Home() {
 
           <div className="flex justify-center gap-6 pt-8">
             {[
-              { icon: Github, href: "https://github.com/stuticoder123", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/stuticoder1/", label: "LinkedIn" },
-              { icon: Twitter, href: "https://x.com/stuticoder123", label: "Twitter" },
-              { icon: Mail, href: "mailto:stuticoder123@gmail.com", label: "Email" },
+              {
+                icon: Github,
+                href: "https://github.com/stuticoder123",
+                label: "GitHub",
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/stuticoder1/",
+                label: "LinkedIn",
+              },
+              {
+                icon: Twitter,
+                href: "https://x.com/stuticoder123",
+                label: "Twitter",
+              },
+              {
+                icon: Mail,
+                href: "mailto:stuticoder123@gmail.com",
+                label: "Email",
+              },
             ].map(({ icon: Icon, href, label }) => (
               <MagneticButton key={label}>
                 <Link
@@ -211,7 +240,11 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <StatCard icon={<Code />} value={14} label="Projects Completed" />
           <StatCard icon={<Users />} value={9120} label="Community Members" />
-          <StatCard icon={<Calendar />} value={500} label="Coding Questions solved" />
+          <StatCard
+            icon={<Calendar />}
+            value={500}
+            label="Coding Questions solved"
+          />
           <StatCard icon={<Star />} value={420} label="GitHub Views" />
         </div>
       </AnimatedSection>
@@ -230,24 +263,33 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hey, I’m a full-stack developer and tech enthusiast passionate about building impactful, user-first web 
-                applications.From intuitive UIs to optimized backends, I create solutions that fuse clean design with 
-                strong functionality. Whether it's coding scalable systems or leading creative digital outreach, I love 
-                turning ideas into experiences that work — beautifully and efficiently.
+                Hey, I’m a full-stack developer and tech enthusiast passionate
+                about building impactful, user-first web applications.From
+                intuitive UIs to optimized backends, I create solutions that
+                fuse clean design with strong functionality. Whether it's coding
+                scalable systems or leading creative digital outreach, I love
+                turning ideas into experiences that work — beautifully and
+                efficiently.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-xl bg-gradient-to-br from-primary/5 to-purple-500/5 border border-primary/10 hover:border-primary/20 transition-colors">
-                <h3 className="font-semibold text-lg mb-2 text-primary">Frontend Expertise</h3>
+                <h3 className="font-semibold text-lg mb-2 text-primary">
+                  Frontend Expertise
+                </h3>
                 <p className="text-muted-foreground">
-                  React, Next.js, TypeScript, and modern CSS frameworks for creating stunning user interfaces.
+                  React, Next.js, TypeScript, and modern CSS frameworks for
+                  creating stunning user interfaces.
                 </p>
               </div>
               <div className="p-6 rounded-xl bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-purple-500/10 hover:border-purple-500/20 transition-colors">
-                <h3 className="font-semibold text-lg mb-2 text-purple-500">Backend Development</h3>
+                <h3 className="font-semibold text-lg mb-2 text-purple-500">
+                  Backend Development
+                </h3>
                 <p className="text-muted-foreground">
-                  Node.js, Express, databases, and API design for robust server-side applications.
+                  Node.js, Express, databases, and API design for robust
+                  server-side applications.
                 </p>
               </div>
             </div>
@@ -256,10 +298,26 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
               <div className="flex gap-4">
                 {[
-                  { icon: Github, href: "https://github.com/stuticoder123", color: "hover:text-gray-600" },
-                  { icon: Linkedin, href: "https://www.linkedin.com/in/stuticoder1/", color: "hover:text-blue-600" },
-                  { icon: Twitter, href: "https://x.com/stuticoder123", color: "hover:text-blue-400" },
-                  { icon: Mail, href: "mailto:stuticoder123@gmail.com", color: "hover:text-red-500" },
+                  {
+                    icon: Github,
+                    href: "https://github.com/stuticoder123",
+                    color: "hover:text-gray-600",
+                  },
+                  {
+                    icon: Linkedin,
+                    href: "https://www.linkedin.com/in/stuticoder1/",
+                    color: "hover:text-blue-600",
+                  },
+                  {
+                    icon: Twitter,
+                    href: "https://x.com/stuticoder123",
+                    color: "hover:text-blue-400",
+                  },
+                  {
+                    icon: Mail,
+                    href: "mailto:stuticoder123@gmail.com",
+                    color: "hover:text-red-500",
+                  },
                 ].map(({ icon: Icon, href, color }) => (
                   <MagneticButton key={href}>
                     <Button
@@ -268,7 +326,11 @@ export default function Home() {
                       className={`rounded-full hover:bg-primary/10 transition-all duration-300 border-primary/20 hover:border-primary/50 hover:scale-110 ${color}`}
                       asChild
                     >
-                      <Link href={href} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Icon className="h-5 w-5" />
                       </Link>
                     </Button>
@@ -280,11 +342,16 @@ export default function Home() {
 
           <div className="relative">
             <div className="relative aspect-square overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 to-purple-500/10 shadow-2xl transform hover:scale-105 transition-all duration-500 border border-primary/20">
-              import profileImage from './stuti-profile.jpg';
-               <img src={profileImage.src} alt="Stuti Gupta" className="object-cover w-full h-full rounded-3xl" />
+              <Image
+                src={profileImage}
+                alt="Stuti Gupta"
+                className="object-cover w-full h-full rounded-3xl"
+                layout="fill"
+                objectFit="cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-          </div>
-              
+            </div>
+
             <div className="absolute top-8 -right-8 w-full h-full border-4 border-primary/30 rounded-3xl -z-10 animate-pulse"></div>
             <div className="absolute -bottom-8 -left-8 w-full h-full border-4 border-purple-500/30 rounded-3xl -z-10 animate-pulse"></div>
             <div className="absolute top-4 right-4 w-24 h-24 bg-gradient-to-r from-primary to-purple-500 rounded-full blur-2xl opacity-50 animate-float"></div>
@@ -305,8 +372,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              Check out some of my recent work that showcases my skills and expertise in building modern web
-              applications
+              Check out some of my recent work that showcases my skills and
+              expertise in building modern web applications
             </p>
           </div>
 
@@ -327,7 +394,8 @@ export default function Home() {
               },
               {
                 title: "Portfolio Website",
-                description: "A responsive portfolio website showcasing projects and skills with a modern design.",
+                description:
+                  "A responsive portfolio website showcasing projects and skills with a modern design.",
                 tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
               },
               {
@@ -392,7 +460,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              I work with a variety of technologies across the full stack to build modern web applications
+              I work with a variety of technologies across the full stack to
+              build modern web applications
             </p>
           </div>
 
@@ -534,7 +603,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              Thoughts, insights, and tutorials on web development and technology
+              Thoughts, insights, and tutorials on web development and
+              technology
             </p>
           </div>
 
@@ -556,7 +626,8 @@ export default function Home() {
               },
               {
                 title: "Optimizing Performance in Next.js Applications",
-                excerpt: "Practical tips and techniques for improving the performance of your Next.js applications.",
+                excerpt:
+                  "Practical tips and techniques for improving the performance of your Next.js applications.",
                 date: "April 10, 2023",
                 category: "Performance",
               },
@@ -666,20 +737,29 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Have a project in mind or just want to chat? Feel free to reach out. I'm always open to discussing new
-                opportunities and interesting ideas.
+                Have a project in mind or just want to chat? Feel free to reach
+                out. I'm always open to discussing new opportunities and
+                interesting ideas.
               </p>
             </div>
 
             <div className="space-y-6">
               {[
-                { icon: Mail, text: "stutigupta@example.com", href: "mailto:stutigupta@example.com" },
+                {
+                  icon: Mail,
+                  text: "stutigupta@example.com",
+                  href: "mailto:stutigupta@example.com",
+                },
                 {
                   icon: Linkedin,
                   text: "linkedin.com/in/stuticoder1",
                   href: "https://www.linkedin.com/in/stuticoder1/",
                 },
-                { icon: Github, text: "github.com/username", href: "https://github.com" },
+                {
+                  icon: Github,
+                  text: "github.com/username",
+                  href: "https://github.com",
+                },
               ].map(({ icon: Icon, text, href }) => (
                 <MagneticButton key={text}>
                   <Link
@@ -691,7 +771,9 @@ export default function Home() {
                     <div className="p-3 rounded-full bg-gradient-to-r from-primary/10 to-purple-500/10 group-hover:from-primary/20 group-hover:to-purple-500/20 transition-all duration-300">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
-                    <span className="text-lg group-hover:text-primary transition-colors">{text}</span>
+                    <span className="text-lg group-hover:text-primary transition-colors">
+                      {text}
+                    </span>
                   </Link>
                 </MagneticButton>
               ))}
@@ -703,9 +785,10 @@ export default function Home() {
                   Let's Build Something Amazing Together
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Whether you're a startup looking to build your first product, or an established company wanting to
-                  modernize your digital presence, I'm here to help bring your vision to life with cutting-edge
-                  technology and thoughtful design.
+                  Whether you're a startup looking to build your first product,
+                  or an established company wanting to modernize your digital
+                  presence, I'm here to help bring your vision to life with
+                  cutting-edge technology and thoughtful design.
                 </p>
               </div>
             </div>
@@ -733,12 +816,16 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             <p className="text-muted-foreground">
               © {new Date().getFullYear()} All rights reserved. Made with{" "}
-              <Heart className="inline h-4 w-4 text-red-500" /> and lots of coffee.
+              <Heart className="inline h-4 w-4 text-red-500" /> and lots of
+              coffee.
             </p>
             <div className="flex items-center gap-4">
               {[
                 { icon: Github, href: "https://github.com" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/stuticoder1/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/stuticoder1/",
+                },
                 { icon: Twitter, href: "https://twitter.com" },
                 { icon: Mail, href: "mailto:stutigupta@example.com" },
               ].map(({ icon: Icon, href }) => (
@@ -762,5 +849,5 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-float-delay"></div>
       </footer>
     </div>
-  )
+  );
 }
